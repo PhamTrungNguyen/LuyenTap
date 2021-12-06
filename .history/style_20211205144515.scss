@@ -1,0 +1,65 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bona Nova", serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-height: 100rem;
+  background-color: #6f16d8;
+  padding: 4rem;
+}
+.active-home
+{
+  border-bottom: 3px solid white; ~
+  padding-bottom: 10px;
+}
+.header {
+  //-------------------- Logo và menu --------------------
+  &-main {
+    // max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &_logo {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+    }
+    &_menu {
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      &__item:not(:last-child) {
+        margin-right: 2rem;
+      }
+      &__link {
+        text-transform: uppercase;
+        display: inline-block;
+        color: white;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 10px;
+        transition: all 0.4s linear;
+      }
+      &__link:hover {
+        color: rgba(255, 255, 255, 0.384);
+        border-bottom: 3px solid white;
+      }
+    }
+  }
+}

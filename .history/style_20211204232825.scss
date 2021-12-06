@@ -1,0 +1,53 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bona Nova", serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.header
+{
+    max-height: auto;
+    background-color: #6f16d8;
+    padding:4rem;
+    &-main{
+        // max-width: 1100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &_logo{
+            display: inline-block;
+            text-transform: uppercase;
+            font-size:2rem;
+            font-weight: 700;
+            color:white; 
+            
+        }
+        &_menu{
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            &__item:not(:last-child){
+                margin-right: 2rem;
+            }
+            &__item:after{
+                content: "";
+                width:1rem;
+                height:5px;
+                position:a
+            }
+        }
+    }
+}
