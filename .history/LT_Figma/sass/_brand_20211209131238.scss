@@ -1,0 +1,9 @@
+.brand{
+    &-container
+    {
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        place-items: center;
+        gap:0 30px;
+    }
+}

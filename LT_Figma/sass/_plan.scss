@@ -1,0 +1,141 @@
+.plan {
+  background-color: #f6f6f6;
+  padding-bottom: 10rem;
+  z-index: -2;
+  &-heading {
+    padding-top: 10rem;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 530px;
+    margin-bottom: 6rem;
+    &_title {
+      font-weight: 500;
+      font-size: 35px;
+      margin-bottom: 2rem;
+      color: $title-color;
+    }
+    &_desc {
+      line-height: calc(30 / 16);
+    }
+  }
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 50px;
+  }
+  &-item {
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px 50px;
+    &_image {
+      margin-bottom: 30px;
+    }
+    &_title {
+      color: $title-color;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: calc(30 / 18);
+      margin-bottom: 3rem;
+    }
+    &_text {
+      margin-bottom: 2rem;
+    }
+    &_icon {
+      margin-right: 2rem;
+    }
+    &_desc {
+      font-size: 14px;
+      line-height: calc(30 / 14);
+    }
+    &_free {
+      margin-top: auto;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: calc(30 / 25);
+      color: $title-color;
+      margin-bottom: 2rem;
+      span {
+        font-weight: 400;
+        color: $text-color;
+      }
+    }
+  }
+  &-item.plan-active,
+  &-item:hover {
+    transition: all 0.5s ease;
+    border: 2px solid $red-color;
+    .button {
+      transition: all 0.5s ease;
+      background-color: $red-color;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+   /* grid-scroll-gap */
+   .plan-main {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 50%;
+    grid-auto-flow: column;
+    padding:1rem;
+    grid-gap: 0rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+    }
+    .plan-main::-webkit-scrollbar {
+      // display: none;
+      width: 0;
+    }
+    .plan-main > *{
+      scroll-snap-align: start;
+    }
+  .plan-main {
+
+  //   /* css scroll */
+    &::-webkit-scrollbar {
+      /* độ rộng scroll */
+      height: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      /* thanh ngoài */
+      background-color: white;
+      border-radius: 2rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      /* thanh scroll */
+      background-color: $red-color;
+      border-radius: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .plan-main {
+    grid-auto-columns: 100%;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    grid-template-columns: unset;
+    grid-column-gap: 2.5rem;
+    padding: 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+  }
+}

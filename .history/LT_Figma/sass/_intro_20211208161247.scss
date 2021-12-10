@@ -1,0 +1,20 @@
+.intro{
+    &-item
+    {
+        background-color: black;
+        padding:  ;
+        display:flex;
+        align-items: center;
+        &_user{
+            margin-right: 35px;
+        }
+        &_info{
+            &__number{
+                font-weight: 700;
+                font-size: 25px;
+                margin-bottom: 6px;
+            }
+        }
+        border-right: 1px solid red;
+    }
+}

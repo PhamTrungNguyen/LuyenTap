@@ -1,0 +1,26 @@
+.header
+{
+    &-container {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-user{
+        &_up{
+            color:$red-color;
+            padding:13px 45px;
+            border:2px solid $red-color;
+            bdr
+        }
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0 40px;
+    &-link{
+
+        color:$text-color;
+    }
+}

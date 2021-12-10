@@ -1,0 +1,22 @@
+.network
+{
+    &-heading{
+        max-width:555px;
+        margin: 0 auto;
+        text-align: center;
+        &_title{
+            font-weight: 500;
+            font-size: 35px;
+            margin-bottom: 2rem;
+            color:$title-color;
+            line-height: calc(50/35);
+        }
+        &_desc{
+            font-weight: 500;
+            line-height: calc(30/16);
+            strong{
+                color:$title-color;
+            }
+        }
+    }
+}

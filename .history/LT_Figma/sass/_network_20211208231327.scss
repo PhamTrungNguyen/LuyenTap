@@ -1,0 +1,15 @@
+.network
+{
+    &-heading{
+        max-width:555px;
+        &_title{
+            font-weight: 500;
+            font-size: 35px;
+            margin-bottom: 2rem;
+            color:$title-color;
+        }
+        &_desc{
+            fw50
+        }
+    }
+}

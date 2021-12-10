@@ -1,0 +1,33 @@
+.network
+{
+
+    &-heading{
+        margin-top: 5rem;
+        text-align: center;
+        max-width:385px;
+        margin: 0 auto;
+        &_title{
+            font-weight: 500;
+            font-size: 35px;
+            margin-bottom: 2rem;
+            color:$title-color;
+            line-height: calc(50/35);
+        }
+        &_desc{
+            max-width:30    0px ;
+            word-break: b;
+            font-weight: 500;
+            line-height: calc(30/16);
+            strong{
+                color:$title-color;
+            }
+        }
+        margin-bottom: 155px;
+    }
+    &-image{
+        img{
+            width: 100%;
+        }
+    }
+}
+

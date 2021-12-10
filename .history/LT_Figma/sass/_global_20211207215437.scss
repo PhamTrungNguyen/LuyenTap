@@ -1,0 +1,25 @@
+body {
+  
+  line-height: 1;
+  font-family: $font-1;
+  color: $text-color;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: white;
+}
+h
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $font-1;
+}
+.wrapper { // lớp bao ngoài
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container { // container bên trong
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

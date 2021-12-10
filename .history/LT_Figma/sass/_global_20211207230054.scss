@@ -1,0 +1,44 @@
+body {
+  
+  line-height: 1;
+  font-family: $font-1;
+  color: $text-color;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: white;
+}
+html
+{
+  font-size: 62.5%;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $font-1;
+}
+.wrapper { // lớp bao ngoài
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 50px 50px;
+}
+.container { // container bên trong
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.button{
+  display: inline-block;
+  padding: 13px 45px;
+  border-radius: 100rem;
+  font-family: $font-1;
+  line-height: 1;
+  font-size: 16px;
+  cursor: pointer;
+  &--primary{
+    font-weight: 700;
+    background-color: $red-color;
+    color:white;
+  }
+  &--
+}

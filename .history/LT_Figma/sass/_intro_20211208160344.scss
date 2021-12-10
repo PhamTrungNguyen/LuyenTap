@@ -1,0 +1,10 @@
+.intro{
+    &-item
+    {
+        display:flex;
+        align-items: center;
+        &_user{
+            margin-left: 35px;
+        }
+    }
+}

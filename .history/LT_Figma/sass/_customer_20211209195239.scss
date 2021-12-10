@@ -1,0 +1,48 @@
+.heading{
+    max-width:460px;
+    text-align:center;
+    margin: 0 auto;
+    &-top{
+        font-weight: 500;
+        font-size: 35px;
+        line-height: calc(50/35);
+        color:$title-color;
+    }
+}
+.customer{
+    padding-top:5rem;
+    &-top{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 555px;
+        padding-bottom: 6rem;
+        &_desc{
+            font-size: 400;
+            line-height: calc(30/16);
+        }
+
+    }
+    &-item{
+        padding:30px;
+    }
+    &-info{
+        display:flex;
+        align-items: center;
+        &_image{
+            margin-right: 2rem;
+        }
+        &_content{
+            &__name{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: calc(30/18);
+                color:$title-color;
+                margin-bottom: -1rem;
+            }
+            &__work{
+                font-size: 14px;
+                line-height: calc(30/14);
+            }
+        }
+    }
+}

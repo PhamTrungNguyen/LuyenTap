@@ -1,0 +1,34 @@
+
+    .heading{
+        margin-top: 5rem;
+        max-width:385px;
+        text-align: center;
+        margin: 0 auto;
+        &_title{
+            font-weight: 500;
+            font-size: 35px;
+            margin-bottom: 2rem;
+            color:$title-color;
+            line-height: calc(50/35);
+        }
+        margin-bottom: 155px;
+    }
+    .network
+    {
+        margin: 0 auto;
+        text-align: center;
+        &_desc{
+            max-width:550px;
+            font-weight: 500;
+            line-height: calc(30/16);
+        strong{
+            color:$title-color;
+        }
+    }
+    &-image{
+        img{
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,23 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+
+  color: $text-color;
+  font-weight: 400;
+  background-color: white;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $font;
+}
+.wrapper { // lớp bao ngoài
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container { // container bên trong
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

@@ -1,0 +1,49 @@
+.hero {
+  padding-bottom: 100px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 40px;
+    position: relative;
+  }
+  &-content {
+    width: 100%;
+    max-width: 555px;
+    &_heading {
+      font-weight: 500;
+      color: $title-color;
+      font-size: 50px;
+      line-height: calc(70 / 50);
+      margin-bottom: 2rem;
+    }
+    &_desc {
+      display: block;
+      line-height: calc(30 / 16);
+      margin-bottom: 5rem;
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+  
+}
+@media screen and (min-width: 1280px) { //trên 1280 thì làm
+  .hero-image {
+    // đỡ mất kích thước của ảnh
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(40px, -50%);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .hero-content_heading {
+    color: #0b132a;
+    font-size: 30px;
+  }
+  .hero-content {
+    width: 100%;
+    max-width: 380px;
+  }
+}

@@ -1,0 +1,77 @@
+.hero {
+  padding-bottom: 100px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 40px;
+    position: relative;
+  }
+  &-content {
+    width: 100%;
+    max-width: 555px;
+    &_heading {
+      font-weight: 500;
+      color: $title-color;
+      font-size: 50px;
+      line-height: calc(70 / 50);
+      margin-bottom: 2rem;
+    }
+    &_desc {
+      display: block;
+      line-height: calc(30 / 16);
+      margin-bottom: 5rem;
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+  &-image {
+    // đỡ mất kích thước của ảnh
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(40px, -50%);
+  }
+  
+}
+@media  screen and (max-width:1279px){
+  .hero-image {
+    // đỡ mất kích thước của ảnh
+    position:inherit;
+    transform: none;
+    img{
+      width: 100%;
+    }
+  }
+  .hero-content {
+    width: 100%;
+    max-width: 455px;
+    text-align: center;
+}
+  .hero-content_heading {
+
+    font-size: 45px;
+
+}
+
+}
+@media screen and (max-width: 1023px) {
+  .hero-content_heading {
+    color: #0b132a;
+    font-size: 30px;
+  }
+}
+@media  screen and (max-width:767px){
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 50px 0;
+    }
+    .hero-content_heading {
+        color: #0b132a;
+        font-size: 23px;
+    }
+    
+    
+
+}

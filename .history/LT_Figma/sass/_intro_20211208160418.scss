@@ -1,0 +1,13 @@
+.intro{
+    &-item
+    {
+        display:flex;
+        align-items: center;
+        &_user{
+            margin-right: 35px;
+        }
+        &_info{
+            
+        }
+    }
+}

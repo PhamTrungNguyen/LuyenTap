@@ -1,0 +1,16 @@
+.subscribe{
+    padding-bottom: 7rem;
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+    &-content{
+        max-width:400px;
+        &_title{
+            font-weight: 500;
+            font-size: 35px;
+            line-height: calc(50/35);
+        }
+    }
+}

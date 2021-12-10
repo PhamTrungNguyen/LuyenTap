@@ -1,0 +1,41 @@
+.subscribe {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px;
+  }
+  &-content {
+    max-width: 400px;
+    background-color: #ffffff;
+    &_title {
+      font-weight: 500;
+      font-size: 35px;
+      line-height: calc(45 / 35);
+      margin-bottom: 2rem;
+      color: $title-color;
+    }
+    &_desc {
+      line-height: calc(30 / 16);
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .subscribe-content {
+    max-width: 252px;
+    background-color: #ffffff;
+  }
+  .subscribe-container {
+    padding: 40px 40px;
+  }
+}
+@media  screen and (max-width:767px){
+    .subscribe-container {
+        padding: 35px 25px;
+        flex-direction: column;
+    }
+    .subscribe-content {
+        text-align: center;
+    }
+
+}

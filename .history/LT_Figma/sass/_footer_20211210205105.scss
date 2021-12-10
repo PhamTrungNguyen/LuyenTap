@@ -1,0 +1,22 @@
+.footer
+{
+    background-color: #F6F6F6;
+    &-container{
+        margin-top: 6rem;
+        display:grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+    }
+    &-left{
+        max-width:320px;
+        &_logo{
+            margin-bottom: 2rem;
+        }
+        &_desc{
+            line-height: calc(30 /16);
+            margin-bottom: 3rem;
+            strong{
+                font-weight: 500;
+            }
+        }
+    }
+}

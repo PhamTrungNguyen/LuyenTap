@@ -1,0 +1,36 @@
+.hero{
+    margin-bottom: 95px;
+    &-container
+    {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 0 40px;
+        position: relative;
+    }
+    &-content{
+        align-items: center;
+        width: 100%;
+        max-width:550px;
+        &_heading{
+            font-weight: 500;
+            color:$title-color;
+            font-size: 50px;
+            line-height:calc(70/50);
+            margin-bottom: 2rem;
+        }
+        &_desc{
+            display: block;
+            line-height:calc(30/16);    
+            margin-bottom: 5rem;
+            strong{
+                font-weight: 500;
+            }
+        }
+        
+    }
+    &-image{
+        po
+        transform: translateX(150px -80px);
+    }
+}

@@ -1,0 +1,15 @@
+.footer
+{
+    background-color: #F6F6F6;
+    &-container{
+        margin-top: 6rem;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-left{
+        &_logo{
+            mb2rem
+        }
+    }
+}

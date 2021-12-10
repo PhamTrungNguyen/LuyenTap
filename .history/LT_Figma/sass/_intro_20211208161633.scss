@@ -1,0 +1,21 @@
+.intro{
+    padding: 37px 0;
+    fa
+    &-item
+    {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: nowrap;
+       flex-direction: row;
+       gap: 0 36px;
+        
+        &_info{
+            &__number{
+                font-weight: 700;
+                font-size: 25px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+}

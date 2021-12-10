@@ -1,0 +1,25 @@
+.header {
+  padding-bottom: 90px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-user {
+    font-weight: 500;
+    &_in {
+      margin-right: 3rem;
+      color: $title-color;
+    }
+    
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0 40px;
+  &-link {
+    color: $text-color;
+  }
+}

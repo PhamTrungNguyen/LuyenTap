@@ -1,0 +1,12 @@
+.feature{
+    padding-bottom: 7rem;
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 160px;
+    }
+    &-image{
+        width: 100%;
+    }
+}
