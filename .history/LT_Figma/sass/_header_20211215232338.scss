@@ -16,41 +16,32 @@
     }
   }
 }
-@media (hover:hover) // chỉ hover trên mh lap
-{
-  .menu-link {
-    position: relative;
-    transition: all 0.2s linear;
-    &:after {
-      content: "";
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0 40px;
+  position: relative;
+  &-link {
+    color: $text-color;
+    &:after{
+      content: " ";
       position: absolute;
-      bottom: -10px;
       left: auto;
-      right: 0;
-      width: 0;
+      bottom: -10px;
+      width: 0rem;
       height: 3px;
       background-color: $red-color;
       transition: all 0.2s linear;
     }
-    &:hover {
-      color: $red-color;
-      &:after {
-        width: 100%;
-        left: 0;
-        right: auto;
-      }
+    &:hover{
+      color:$red-color;
+      width: 5rem;
+      left:0;
+      right: auto;
     }
   }
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 0 40px;
-  list-style: none;
-  &-link {
-    color: $text-color;
-  }
+  
   &-toggle{
     display: none;
     width: 30px;

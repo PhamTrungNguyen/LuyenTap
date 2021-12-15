@@ -16,8 +16,7 @@
     }
   }
 }
-@media (hover:hover) // chỉ hover trên mh lap
-{
+
   .menu-link {
     position: relative;
     transition: all 0.2s linear;
@@ -41,7 +40,6 @@
       }
     }
   }
-}
 
 .menu {
   display: flex;

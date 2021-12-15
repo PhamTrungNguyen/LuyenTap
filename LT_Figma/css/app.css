@@ -251,11 +251,36 @@ button {
   color: #0b132a;
 }
 
+@media (hover: hover) {
+  .menu-link {
+    position: relative;
+    transition: all 0.2s linear;
+  }
+  .menu-link:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #F53838;
+    transition: all 0.2s linear;
+  }
+  .menu-link:hover {
+    color: #F53838;
+  }
+  .menu-link:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
 .menu {
   display: flex;
   align-items: center;
-  list-style: none;
   gap: 0 40px;
+  list-style: none;
 }
 .menu-link {
   color: #4F5665;

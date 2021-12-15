@@ -16,8 +16,7 @@
     }
   }
 }
-@media (hover:hover) // chỉ hover trên mh lap
-{
+@media (hover: hover) {
   .menu-link {
     position: relative;
     transition: all 0.2s linear;
@@ -42,15 +41,12 @@
     }
   }
 }
-
 .menu {
   display: flex;
   align-items: center;
   gap: 0 40px;
-  list-style: none;
-  &-link {
-    color: $text-color;
-  }
+ 
+  
   &-toggle{
     display: none;
     width: 30px;
