@@ -1,0 +1,23 @@
+.newsletter{
+    padding-bottom: 10rem;
+    &-container{
+        display:flex;
+        align-items: center;
+        gap: 0 20px;
+        padding: 70px 160px;
+    }
+    &-content{
+        &_title{
+            max-width:405px;
+            font-size: 48px;
+            margin-bottom: 2.5rem;
+        }
+        &_desc{
+            display: inline-block;
+            max-width: 340px;
+        }
+    }
+    &-form{
+        
+    }
+}

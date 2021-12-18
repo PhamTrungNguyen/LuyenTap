@@ -1,0 +1,39 @@
+.markeing{
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 30px;
+        position: relative;
+    }
+    &-content{
+        max-width: 500px;
+    }
+    &-text{
+        font-size: 13px;
+        color:$orange-color;
+        padding-bottom: 18px;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: calc(56/50);
+        padding-bottom: 25px;
+        color:$title-color;
+    }
+    &-desc{
+        padding-bottom: 5rem;
+    }
+    &-bottom{
+        display: flex;
+        align-items: center;
+        &_image{
+            padding:20px;
+            border-radius:100rem;
+            box-shadow: 0 42px 114px 0 white inset;
+        }
+    }
+    &-image{
+        width: 100%;
+    }
+}

@@ -1,0 +1,42 @@
+.business {
+  padding-bottom: 8rem;
+  &-content {
+    margin: 0 auto;
+    text-align: center;
+    &_text {
+      padding-bottom: 25px;
+    }
+    &_desc {
+      padding-bottom: 7rem;
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 33px;
+  }
+  &-item {
+    text-align: center;
+    margin: 0 auto;
+    &_icon {
+      margin: 0 auto;
+      padding-bottom: 26px;
+    }
+    &_title {
+      margin-bottom: 19px;
+      font-size: 21px;
+    }
+    &_desc {
+    
+        
+        display: inline-block;
+        max-width: 245px;
+    }
+  }
+}
+.title-business {
+  max-width: 426px;
+  font-size: 40px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}

@@ -1,0 +1,51 @@
+.business {
+  padding-bottom: 8rem;
+  &-content {
+    margin: 0 auto;
+    text-align: center;
+    &_text {
+      padding-bottom: 25px;
+    }
+    &_desc {
+      padding-bottom: 7rem;
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 33px;
+  }
+  &-item {
+    padding: 40px 40px 80px;
+    border: 2px solid  $border;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    &_icon {
+      margin: 0 auto;
+      padding-bottom: 26px;
+    }
+    &_title {
+      margin-bottom: 19px;
+      font-size: 21px;
+    }
+    &_desc {
+      text-align: center;
+      display: inline-block;
+      max-width: 280px;
+    }
+    &:hover{
+        border: 0;
+        background-color: #fff;
+    }
+  }
+}
+.title-business {
+  max-width: 426px;
+  font-size: 40px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}

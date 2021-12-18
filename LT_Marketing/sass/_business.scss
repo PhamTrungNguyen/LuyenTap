@@ -1,0 +1,130 @@
+.business {
+  padding-bottom: 10rem;
+  &-content {
+    margin: 0 auto;
+    text-align: center;
+    &_text {
+      padding-bottom: 25px;
+    }
+    &_desc {
+      padding-bottom: 7rem;
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 33px;
+  }
+  &-item {
+    transition: all 0.25s linear;
+    padding: 40px 40px 80px;
+    border: 2px solid $border;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    &_icon {
+      width: 67px;
+      height: 67px;
+      border-radius: 100rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f7ff;
+      margin-bottom: 26px;
+      transition: all 0.25s linear;
+      img {
+        transition: all 0.25s linear;
+      }
+    }
+    &_title {
+      margin-bottom: 19px;
+      font-size: 21px;
+    }
+    &_desc {
+      text-align: center;
+      display: inline-block;
+      max-width: 280px;
+    }
+    &:hover {
+      box-shadow: 0px 24px 60px rgba(94, 122, 148, 0.1);
+      border-color: transparent;
+      background-color: white;
+      transition: all 0.25s linear;
+      .business-item_icon {
+        background-color: $icon-color;
+        img {
+          filter: brightness(10);
+        }
+      }
+    }
+  }
+}
+.title-business {
+  max-width: 426px;
+  font-size: 40px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+@media  screen and (max-width:1023px){
+  .business-list{
+        grid-auto-columns: 60%;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        grid-template-columns: unset;
+        grid-column-gap: 2.5rem;
+        padding: 2rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+        
+        // padding-top: 2rem;
+
+         /* css scroll */
+            &::-webkit-scrollbar {
+              /* độ rộng scroll */
+              height: 0.6rem;
+            }
+        
+            &::-webkit-scrollbar-track {
+              /* thanh ngoài */
+              background-color: white;
+              border-radius: 2rem;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+              /* thanh scroll */
+              background-color: black;
+              border-radius: 2rem;
+            }
+  }
+  .business-item_desc {
+    max-width: 100%;
+}
+
+}
+@media  screen and (max-width:767px){
+  .title-business {
+    max-width: 100%;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.business-content_desc {
+  padding-bottom: 2rem;
+}
+.business-item {
+  padding: 1rem;
+}
+.business-item_title {
+  margin-bottom: 19px;
+  font-size: 17px;
+}
+.business {
+  padding-bottom: 5rem;
+}
+
+}

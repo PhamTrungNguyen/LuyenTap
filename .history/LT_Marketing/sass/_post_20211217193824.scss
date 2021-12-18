@@ -1,0 +1,13 @@
+.post{
+   &-content{
+    //    display: inline-block;
+       margin: 0 auto;
+       text-align: center;
+       &_title{
+        margin: 0 auto;
+           font-size: 40px;
+           max-width:455px;
+           padding-bottom: 2.5rem;
+       }
+   }
+}

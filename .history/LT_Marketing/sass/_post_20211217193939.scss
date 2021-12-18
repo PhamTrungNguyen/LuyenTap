@@ -1,0 +1,12 @@
+.post {
+  &-content {
+    margin: 0 auto;
+    //    display: inline-block;
+    text-align: center;
+    &_title {
+      font-size: 40px;
+      max-width: 455px;
+      padding-bottom: 2.5rem;
+    }
+  }
+}

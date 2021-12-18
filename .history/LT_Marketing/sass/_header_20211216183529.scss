@@ -1,0 +1,23 @@
+.header {
+  padding-top: 2rem;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-menu {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    &_link {
+      color: $text-color;
+    }
+  }
+  &-user{
+      &_in{
+          padding: 20px 30px;
+          color:$orange-color;
+          border: 
+      }
+  }
+}

@@ -1,0 +1,9 @@
+.markeing{
+    &-container{
+        display: flex;
+        align-items: center;
+    }
+    &-content{
+        max-width: 500px;
+    }
+}

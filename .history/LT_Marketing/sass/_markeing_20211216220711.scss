@@ -1,0 +1,16 @@
+.markeing{
+    &-container{
+        fa
+        gap: 0 30px;
+        position: relative;
+    }
+    &-content{
+        max-width: 500px;
+    }
+    &-image{
+       position:absolute;
+       right:0;
+       top: 50%; 
+       transform: translateX(-20px,50%);   
+    }
+}

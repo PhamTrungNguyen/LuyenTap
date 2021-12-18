@@ -1,0 +1,11 @@
+.business {
+    padding-bottom: 8rem;
+  &-content {
+      margin: 0 auto;
+      text-align: center;
+    &_text {
+      padding-bottom: 25px;
+    }
+  }
+}
+

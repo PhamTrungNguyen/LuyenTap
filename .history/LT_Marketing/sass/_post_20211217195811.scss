@@ -1,0 +1,40 @@
+.post {
+  padding-bottom: 10rem;
+  &-content {
+    margin: 0 auto;
+    //    display: inline-block;
+    text-align: center;
+    padding-bottom: 8rem;
+    &_title {
+      margin: 0 auto;
+      font-size: 40px;
+      max-width: 455px;
+      padding-bottom: 2.5rem;
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 30px;
+  }
+  &-item {
+    border-radius: 17px;
+    border-radius: 17px;
+    &-content{
+        padding: 33px 23px;
+    }
+    &_title {
+      color: $orange-color;
+     margin-bottom: 1rem;
+    }
+    &_desc {
+      font-size: 13px;
+    }
+    &:hover{
+        .post-item-content{
+            box-shadow: 0 0 5px 5px #bfbcbce0;
+            border-color: transparent;
+        }
+    }
+  }
+}

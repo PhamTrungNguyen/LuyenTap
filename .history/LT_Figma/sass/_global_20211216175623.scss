@@ -1,0 +1,86 @@
+body {
+  line-height: 1;
+  font-family: $font-1;
+  color: $text-color;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: white;
+}
+html {
+  font-size: 62.5%;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $font-1;
+}
+.wrapper {
+  // lớp bao ngoài
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  // container bên trong
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.button {
+  display: inline-block;
+  padding: 13px 45px;
+  border-radius: 100rem;
+  font-family: $font-1;
+  line-height: 1;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &--primary {
+    font-weight: 700;
+    background-color: $red-color;
+    color: white;
+    border-radius: 10px;
+    padding: 17px 77px;
+    position: relative;
+    &:after {
+      content: "";
+      background: rgba(245, 56, 56, 0.979);
+      filter: blur(26px);
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+  &--outline {
+    background-color: transparent;
+    color: $red-color;
+    font-weight: 500;
+    border: 1px solid;
+  }
+  &--rounded {
+    font-weight: 700;
+    background-color: $red-color;
+    color: white;
+    padding: 13px 62px;
+    position: relative;
+    z-index: 2;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 90%;
+      height: 100%;
+      transform: translate(-50%, 50%);
+      background-color: rgba(245, 56, 56, 0.35);
+      filter: blur(54px);
+      border-radius: inherit;
+    }
+  }
+}

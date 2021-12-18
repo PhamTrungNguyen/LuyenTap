@@ -1,0 +1,25 @@
+.post {
+  &-content {
+    margin: 0 auto;
+    //    display: inline-block;
+    text-align: center;
+    padding-bottom: 8rem;
+    &_title {
+      margin: 0 auto;
+      font-size: 40px;
+      max-width: 455px;
+      padding-bottom: 2.5rem;
+    }
+  }
+  &-list{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0 30px;
+  }
+  &-item{
+      &_title{
+          color:$orange-color;
+          margin: 
+      }
+  }
+}

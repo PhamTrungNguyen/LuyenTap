@@ -1,0 +1,17 @@
+body {
+  line-height: 1;
+  font-family: $font;
+  color: text-color;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: $background;
+}
+html {
+  font-size: 62.5%;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $;
+}

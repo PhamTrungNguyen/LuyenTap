@@ -1,0 +1,33 @@
+.newsletter{
+    margin-bottom: 10rem;
+    background-color: #F4F6FD;
+    border-radius:5rem;
+    &-container{
+        display:flex;
+        align-items: center;
+        gap: 0 20px;
+        padding: 70px 160px;
+    }
+    &-content{
+        &_title{
+            max-width:405px;
+            font-size: 48px;
+            margin-bottom: 2.5rem;
+        }
+        &_desc{
+            display: inline-block;
+            max-width: 340px;
+        }
+    }
+    &-form{
+        display: flex;
+        align-items: center;
+    }
+    &-input{
+        outline:none;
+        border:none;
+        padding: 15px 0 15px 20px;
+        background-color: white;
+        bdr
+    }
+}

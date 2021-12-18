@@ -1,0 +1,11 @@
+.post{
+   &-content{
+       display: inline-block;
+       margin: 0 auto;
+       &_title{
+           font-size: 40px;
+           max-width:45px;
+           padding-bottom: 2.5rem;
+       }
+   }
+}

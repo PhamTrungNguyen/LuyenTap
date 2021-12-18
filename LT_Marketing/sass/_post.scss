@@ -1,0 +1,75 @@
+.post {
+  padding-bottom: 10rem;
+  &-content {
+    margin: 0 auto;
+    //    display: inline-block;
+    text-align: center;
+    padding-bottom: 8rem;
+    &_title {
+      margin: 0 auto;
+      font-size: 40px;
+      max-width: 455px;
+      padding-bottom: 2.5rem;
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 30px;
+  }
+  &-item {
+    border-radius: 17px;
+    transition: all 0.25s linear;
+    &-content {
+      padding: 33px 23px;
+    }
+    &_title {
+      margin-bottom: 1rem;
+    }
+    &_desc {
+      font-size: 13px;
+    }
+    &:hover {
+      //   background: #ffffff;
+      box-shadow: 0px 46px 100px -31px rgba(0, 0, 0, 0.1);
+      transition: all 0.25s linear;
+      .post-item_title {
+        transition: all 0.25s linear;
+        color: $orange-color;
+      }
+    }
+  }
+}
+@media  screen and (max-width:767px){
+  .post-list {
+        grid-auto-columns: 60%;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        grid-template-columns: unset;
+        grid-column-gap: 2.5rem;
+        padding: 2rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+         /* css scroll */
+            &::-webkit-scrollbar {
+              /* độ rộng scroll */
+              height: 0.6rem;
+            }
+        
+            &::-webkit-scrollbar-track {
+              /* thanh ngoài */
+              background-color:white;
+              border-radius: 2rem;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+              /* thanh scroll */
+              background-color:black;
+              border-radius: 2rem;
+            }
+}
+
+}

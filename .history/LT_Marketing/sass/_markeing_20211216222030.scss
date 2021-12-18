@@ -1,0 +1,23 @@
+.markeing{
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 30px;
+        position: relative;
+    }
+    &-content{
+        max-width: 500px;
+        &_text{
+            font-size: 13px;
+            color:$orange-color;
+            margin-bottom: 18px;
+        }
+        &_title{
+            
+        }
+    }
+    &-image{
+        width: 100%;
+    }
+}

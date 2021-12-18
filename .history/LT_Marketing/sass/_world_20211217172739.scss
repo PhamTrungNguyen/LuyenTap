@@ -1,0 +1,20 @@
+.world
+{
+    &-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 0 80px;
+    }
+    &-content{
+        &_text{
+            margin-bottom: 2.5rem;
+        }
+        &_title{
+            font-size: 40px;
+            
+        }
+    }
+}

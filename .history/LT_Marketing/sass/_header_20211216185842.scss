@@ -1,0 +1,35 @@
+.header {
+  padding-top: 2rem;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-menu {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    &_link {
+      color: $text-color;
+    }
+  }
+}
+@media (hover:hover){
+    .header{
+        &-menu_link{
+            position: relative;
+            &:after {
+                content: "";
+                width: 5rem;
+                height: 3px;
+                position: absolute;
+                left:auto;
+                right:0;
+                bottom:-10px;
+                background-color: $orange-color;
+                transition: all 0.25s linear;
+                tts
+            }
+        }
+    }
+}

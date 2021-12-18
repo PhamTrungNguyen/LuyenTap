@@ -1,0 +1,16 @@
+.business {
+    padding-bottom: 8rem;
+  &-content {
+      margin: 0 auto;
+      text-align: center;
+    &_text {
+      padding-bottom: 25px;
+    }
+  }
+}
+.title-business{
+    max-width:426px;
+    font-size: 40px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}

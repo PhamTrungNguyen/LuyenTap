@@ -1,0 +1,14 @@
+.world
+{
+    &-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 0 80px;
+    }
+    &-content{
+
+    }
+}

@@ -1,0 +1,13 @@
+.newsletter{
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-content{
+        max-width:405px;
+        &_title{
+            font-size: 40px;
+        }
+    }
+}

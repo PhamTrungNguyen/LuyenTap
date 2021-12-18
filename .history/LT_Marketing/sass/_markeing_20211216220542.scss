@@ -1,0 +1,14 @@
+.markeing{
+    &-container{
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+        position: relative;
+    }
+    &-content{
+        max-width: 500px;
+    }
+    &-image{
+        width: 100%;
+    }
+}

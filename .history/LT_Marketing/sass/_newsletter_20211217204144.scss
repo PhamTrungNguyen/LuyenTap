@@ -1,0 +1,39 @@
+.newsletter{
+    margin-bottom: 10rem;
+    background-color: #F4F6FD;
+    border-radius:5rem;
+    &-container{
+        display:flex;
+        align-items: center;
+        gap: 0 20px;
+        padding: 70px 160px;
+    }
+    &-content{
+        &_title{
+            max-width:405px;
+            font-size: 48px;
+            margin-bottom: 2.5rem;
+        }
+        &_desc{
+            display: inline-block;
+            max-width: 340px;
+        }
+    }
+    &-form{
+        display: flex;
+        align-items: center;
+    }
+    &-email{
+        // flex: 1;
+    }
+    &-input{
+        outline:none;
+        border: 0;
+        background-color: transparent;
+        width: 120%;
+        padding: 15px 0 15px 20px;
+        background-color: white;
+        border-radius:2rem;
+        padding-right:7rem;
+    }
+}
